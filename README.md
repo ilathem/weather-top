@@ -1,8 +1,7 @@
-# Webpack Starter
+# Weather - The Odin Project 
 
-This is for quickly making new projects without setting up basic stuff
-by hand. Was initially created in the [todo](https://github.com/ilathem/todo-top)
-repo.
+The weather app project from [here](https://www.theodinproject.com/lessons/node-path-javascript-weather-app),
+fetches a weather api and displays the next 3 days of forecast for a user-specified city.
 
 ## Deploying:
 
