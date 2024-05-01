@@ -1,11 +1,17 @@
 import './index.css';
 import { createDiv, createText } from './utils';
 import testData from './testdata.json';
+import loadingGif from './loading.gif';
+
+const loading = document.createElement('img');
+loading.classList.add('loading');
+loading.src = loadingGif;
 
 document.body.addEventListener('keyup', (e) => {
   if (e.key === 'Enter') {
     console.log('enter pressed');
     document.querySelector('.weatherData').innerHTML = '';
+    document.querySelector('.weatherData').appendChild(loading);
     getWeather();
   }
 });
@@ -19,6 +25,7 @@ const getWeather = async () => {
     );
     const data = await response.json();
     console.log(data);
+    document.querySelector('.weatherData').innerHTML = '';
     displayWeatherData(data);
   } catch (error) {
     console.error(error);

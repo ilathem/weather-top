@@ -20,6 +20,10 @@ body {
   align-items: center;
 }
 
+.loading {
+  margin-top: 2rem;
+}
+
 .location {
   width: 100%;
   display: flex;
